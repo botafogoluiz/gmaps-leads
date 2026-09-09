@@ -1,0 +1,10 @@
+services:
+  gmaps-leads:
+    build: .
+    container_name: gmaps-leads
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    stdin_open: true
+    tty: true
