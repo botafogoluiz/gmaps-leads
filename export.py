@@ -52,3 +52,7 @@ def exportar():
             writer.writerow([nome, site, tipo_site, instagram, duvidoso, oportunidade])
 
     print(f"CSV salvo em {config.OUTPUT_CSV_FILE} ({len(cache)} negócios).")
+
+
+if __name__ == "__main__":
+    exportar()
